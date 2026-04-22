@@ -1,0 +1,167 @@
+.product-info {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--clr-surface);
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subtitle {
+  color: var(--clr-primary-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.history-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--clr-text-light);
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+/* Misión, Visión, Futuro */
+.mvf-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background: var(--clr-bg);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-bottom: 4rem;
+}
+
+.mvf-item {
+  flex: 1;
+  padding: 0 var(--spacing-lg);
+  text-align: center;
+}
+
+.mvf-item h3 {
+  color: var(--clr-primary);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mvf-item p {
+  color: var(--clr-text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: var(--clr-primary-light);
+  opacity: 0.3;
+  margin: 0 var(--spacing-md);
+}
+
+@media (max-width: 900px) {
+  .mvf-section {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: 2rem 1.5rem;
+  }
+  .vertical-line {
+    width: 100%;
+    height: 1px;
+    margin: var(--spacing-md) 0;
+  }
+  .mvf-item {
+    padding: 0;
+  }
+}
+
+/* Lo que nos hace diferentes */
+.different-section {
+  margin-top: var(--spacing-xl);
+}
+
+.different-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--clr-text);
+  font-size: 2.2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .different-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.feature-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: var(--spacing-lg);
+  background-color: var(--clr-bg);
+  border-radius: 8px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.icon-wrap {
+  background: var(--clr-secondary);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 65px;
+  height: 65px;
+  color: var(--clr-primary);
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5px;
+}
+
+.feature-item h3 {
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.feature-item p {
+  color: var(--clr-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

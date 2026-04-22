@@ -1,0 +1,23 @@
+/* App CSS Orchestrator */
+.view-container {
+  padding-top: 80px; /* Accounts for fixed navbar height */
+  min-height: 100vh;
+}
+
+.view-container > * {
+  display: block;
+  animation: sectionEntrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  will-change: opacity, transform;
+}
+
+@keyframes sectionEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

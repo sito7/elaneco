@@ -1,0 +1,39 @@
+<section id="contacto" class="b2b-section">
+  <div class="container">
+    <div class="form-container">
+      <h2>Presupuesto Academias</h2>
+      <p class="form-intro">Solicita un presupuesto personalizado para tu escuela de danza. Benefíciate de condiciones B2B exclusivas.</p>
+      
+      <form class="b2b-form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="academia">Nombre de la Escuela/Academia</label>
+          <input type="text" id="academia" required [(ngModel)]="academia" name="academia" placeholder="Ej. Academia de Danza Renacer">
+        </div>
+        <div class="form-group">
+          <label for="director">Nombre del Director/a</label>
+          <input type="text" id="director" required [(ngModel)]="director" name="director" placeholder="Ej. Ana García">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico profesional</label>
+          <input type="email" id="email" required [(ngModel)]="email" name="email" placeholder="contacto@academia.com">
+        </div>
+        <div class="form-group">
+          <label for="volumen">Volumen estimado (Alumnos)</label>
+          <select id="volumen" [(ngModel)]="volumen" name="volumen">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="1-50">1 a 50 alumnos</option>
+            <option value="51-150">51 a 150 alumnos</option>
+            <option value="+150">Más de 150 alumnos</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" [disabled]="isSubmitting()">
+          {{ isSubmitting() ? 'Enviando Solicitud...' : 'Solicitar Presupuesto' }}
+        </button>
+      </form>
+
+      <div class="success-message" *ngIf="successMessage()">
+        {{ successMessage() }}
+      </div>
+    </div>
+  </div>
+</section>

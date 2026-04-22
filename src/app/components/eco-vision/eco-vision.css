@@ -1,0 +1,37 @@
+.social-proof {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--clr-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--clr-text-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.distributor-logo {
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.distributor-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}

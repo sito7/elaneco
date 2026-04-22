@@ -1,0 +1,14 @@
+<main id="inicio" class="hero">
+  <div class="hero-bg"></div> <!-- Placeholder for background image -->
+  <div class="hero-content">
+    <h1 [class.animar-fade]="mostrarAnimacion()">
+      Donde el arte toca la naturaleza
+    </h1>
+    <p [class.animar-slide]="mostrarAnimacionSecundaria()">
+      Rendimiento técnico y materiales reciclados para la danza profesional.
+    </p>
+    <a (click)="nav.setActive('distribuidores', 'contacto')" [class.animar-slide]="mostrarAnimacionSecundaria()" class="btn-primary" style="cursor: pointer; margin-top: 2rem;">
+      Únete al cambio
+    </a>
+  </div>
+</main>

@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<div class="view-container">
+  <app-hero *ngIf="nav.activeSection() === 'inicio'"></app-hero>
+  <app-product-info *ngIf="nav.activeSection() === 'marca'"></app-product-info>
+  <app-producto *ngIf="nav.activeSection() === 'producto'"></app-producto>
+  
+  <ng-container *ngIf="nav.activeSection() === 'promociones'">
+    <app-event-gallery></app-event-gallery>
+    <app-plan-renove></app-plan-renove>
+  </ng-container>
+  
+  <ng-container *ngIf="nav.activeSection() === 'distribuidores'">
+    <app-eco-vision></app-eco-vision>
+    <app-distribution></app-distribution>
+    <app-b2b-form></app-b2b-form>
+  </ng-container>
+</div>
+
+<app-footer></app-footer>

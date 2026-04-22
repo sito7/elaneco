@@ -1,0 +1,125 @@
+.distribution-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--clr-bg);
+}
+
+.section-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.subtitle {
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.distribution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.dist-card {
+  background: var(--clr-surface);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border: 1px solid var(--clr-border);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(161, 138, 139, 0.1);
+  border-color: var(--clr-primary-light);
+}
+
+.dist-card.highlight {
+  background: linear-gradient(145deg, #ffffff 0%, #fefef5 100%);
+  border: 1px solid var(--clr-primary-light);
+}
+
+.card-icon {
+  margin-bottom: 1.5rem;
+  color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-icon {
+  stroke-width: 1.5px;
+}
+
+h3 {
+  color: var(--clr-primary-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.info-group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.info-group strong {
+  display: block;
+  color: var(--clr-text);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.text-link {
+  color: var(--clr-primary);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  border-bottom: 1px solid transparent;
+}
+
+.text-link:hover {
+  color: var(--clr-primary-dark);
+  border-bottom-color: var(--clr-primary-dark);
+}
+
+.social-tags {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--clr-secondary);
+  color: var(--clr-primary-dark);
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.handle {
+  font-weight: 600;
+  color: var(--clr-primary);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .distribution-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dist-card {
+    padding: 2rem;
+  }
+}

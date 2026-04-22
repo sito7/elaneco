@@ -1,0 +1,84 @@
+.b2b-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--clr-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--clr-surface);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: var(--clr-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-intro {
+  text-align: center;
+  color: var(--clr-text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.b2b-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 500;
+  color: var(--clr-text);
+  font-size: 0.9rem;
+}
+
+input, select {
+  padding: 1rem;
+  border: 1px solid var(--clr-border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--clr-bg);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+  background-color: var(--clr-surface);
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.btn-primary:disabled {
+  background-color: var(--clr-primary-light);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary-dark);
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  animation: fadeIn var(--transition-fast) ease-out;
+}

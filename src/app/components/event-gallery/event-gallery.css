@@ -1,0 +1,81 @@
+.event-gallery {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--clr-surface);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: var(--clr-primary-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  display: block;
+}
+
+.event-details-main {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: var(--clr-text);
+}
+
+.event-details-main p {
+  margin-bottom: 10px;
+}
+
+.stand-activities-section {
+  border-top: 1px solid var(--clr-border);
+  padding-top: 40px;
+}
+
+.activities-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--clr-primary);
+}
+
+.activities-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--clr-text-light);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.activity-card {
+  background-color: var(--clr-surface);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border-top: 3px solid var(--clr-primary-light);
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.activity-card h4 {
+  color: var(--clr-text);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.activity-card p {
+  color: var(--clr-text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
